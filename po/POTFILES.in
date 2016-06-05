@@ -1,0 +1,29 @@
+[encoding: UTF-8]
+uberwriter/UberwriterAdvancedExportDialog.py
+uberwriter_lib/gtkspellcheck/spellcheck.py
+uberwriter_lib/Builder.py
+uberwriter_lib/Window.py
+uberwriter_lib/helpers.py
+uberwriter/MarkupBuffer.py
+uberwriter_lib/PreferencesDialog.py
+uberwriter.desktop.in
+uberwriter/UberwriterTextEditor.py
+bin/uberwriter.py
+setup.py
+uberwriter_lib/LatexToPNG.py
+uberwriter_lib/tables.py
+uberwriter_lib/pylocales/__init__.py
+uberwriter/UberwriterInlinePreview.py
+[type: gettext/glade]data/ui/UberwriterWindow.ui
+uberwriter/__init__.py
+uberwriter/FormatShortcuts.py
+[type: gettext/glade]data/ui/UberwriterAdvancedExportDialog.ui
+uberwriter_lib/gtkspellcheck/__init__.py
+uberwriter/AboutUberwriterDialog.py
+uberwriter_lib/AboutDialog.py
+[type: gettext/glade]data/ui/AboutUberwriterDialog.ui
+uberwriter_lib/uberwriterconfig.py
+uberwriter_lib/__init__.py
+uberwriter/UberwriterWindow.py
+uberwriter_lib/pylocales/locales.py
+uberwriter_lib/AdvancedExportDialog.py

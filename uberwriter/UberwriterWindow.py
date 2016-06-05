@@ -20,6 +20,7 @@ import os
 import codecs
 import webbrowser
 import urllib
+import urllib.parse
 import pickle
 
 from locale import gettext as _
@@ -79,19 +80,19 @@ class UberwriterWindow(Window):
 
     def scrolled(self, widget):
         """if window scrolled + focusmode make font black again"""
-        if self.focusmode:
-            if self.textchange == False:
-                if self.scroll_count >= 1:
-                    self.TextBuffer.apply_tag(
-                        self.MarkupBuffer.blackfont, 
-                        self.TextBuffer.get_start_iter(), 
-                        self.TextBuffer.get_end_iter())
-                else:
-                    self.scroll_count += 1
-            else: 
-                self.scroll_count = 0
-                self.typewriter()
-                self.textchange = False
+#         if self.focusmode:
+#            if self.textchange == False:
+#                if self.scroll_count >= 1:
+#                    self.TextBuffer.apply_tag(
+#                        self.MarkupBuffer.blackfont, 
+#                        self.TextBuffer.get_start_iter(), 
+#                        self.TextBuffer.get_end_iter())
+#                else:
+#                    self.scroll_count += 1
+#            else: 
+#                self.scroll_count = 0
+#                self.typewriter()
+#                self.textchange = False
 
     def after_modify_text(self, *arg):
         if self.focusmode:
@@ -380,7 +381,7 @@ class UberwriterWindow(Window):
         self.window_height = widget.get_size()[1]
 
         # Calculate left / right margin
-        lm = (widget.get_size()[0] - 600) / 2
+        lm = (widget.get_size()[0] - 1050) / 2
             
         self.TextEditor.set_left_margin(lm)
         self.TextEditor.set_right_margin(lm)

@@ -15,9 +15,9 @@
 ### END LICENSE
 
 import re
-import http.client
+# import http.client
 import urllib
-from urllib.error import URLError, HTTPError
+# from urllib.error import URLError, HTTPError
 import webbrowser
 import locale
 import subprocess
